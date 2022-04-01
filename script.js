@@ -1,9 +1,10 @@
 const button = document.getElementById('circle_button')
 let dice = document.getElementById('dice')
+let rotation = 0;
 
 button.addEventListener('click',function(){
   let url = 'https://api.adviceslip.com/advice';
-  dice.style.transform =`rotate(75deg)`
+  rotateImg()
   fetch(url)
   .then(res => res.json())
   .then((out) => {
@@ -15,13 +16,9 @@ button.addEventListener('click',function(){
 
 
 
-// function rotateImg(){
-//   rotation += 90; // add 90 degrees, you can change this as you want
-//       if (rotation === 360) { 
-//         // 360 means rotate back to 0
-//         rotation = 0;
-//   return rotation
-// }
+function rotateImg(){
+  rotation += 90; // add 90 degrees, you can change this as you want
 
-// }
+dice.style.transform =`rotate(${rotation}deg)`;
+}
 
