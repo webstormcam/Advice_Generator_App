@@ -3,9 +3,10 @@ let dice = document.getElementById('dice')
 let rotation = 0;
 let advice_num = document.getElementById('number')
 let advice = document.getElementById('advice_quote')
+let url = 'https://api.adviceslip.com/advice';
 
 button.addEventListener('click',function(){
-  let url = 'https://api.adviceslip.com/advice';
+  
   rotateImg()
   fetch(url)
   .then(res => res.json())
