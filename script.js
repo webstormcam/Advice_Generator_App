@@ -5,13 +5,30 @@ let advice_num = document.getElementById('number')
 let advice = document.getElementById('advice_quote')
 let url = 'https://api.adviceslip.com/advice';
 
+
+
+
+fetch(url)
+.then(res => res.json())
+.then((out) => {
+  advice_num.innerHTML = `${out.slip.id}`
+  advice.innerHTML =`${out.slip.advice}`
+})
+.catch(err => { throw err });
+
+
+
+
+
+
 button.addEventListener('click',function(){
   
   rotateImg()
   fetch(url)
   .then(res => res.json())
   .then((out) => {
-    console.log( out.slip.id, out.slip.advice);
+    advice_num.innerHTML = `${out.slip.id}`
+  advice.innerHTML =`${out.slip.advice}`
   })
   .catch(err => { throw err });
 })
