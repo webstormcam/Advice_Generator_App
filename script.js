@@ -19,7 +19,7 @@ button.addEventListener('click',function(){
 
 
 function rotateImg(){
-  rotation += 90; // add 90 degrees, you can change this as you want
+  rotation += 90;
 
 dice.style.transform =`rotate(${rotation}deg)`;
 }
