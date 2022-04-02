@@ -58,7 +58,7 @@ body {
     /* Light Cyan */
 
     color: #CEE3E9;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     width: 90%;
 
@@ -119,5 +119,17 @@ body {
         line-height: 38px;
         text-align: center;
         letter-spacing: -0.3px;
+    }
+
+    #advice_num {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 4.08571px;
     }
 }
