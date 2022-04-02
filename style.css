@@ -58,6 +58,9 @@ body {
     /* Light Cyan */
 
     color: #CEE3E9;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 90%;
 
 }
 
@@ -97,11 +100,7 @@ body {
     transition: 0.6s;
 }
 
-#advice_quote {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    width: 90%;
-}
+
 
 
 @media screen and (min-width:768px) {
@@ -111,5 +110,14 @@ body {
 
     #divider_mobile {
         display: none;
+    }
+
+    #advice_quote {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: -0.3px;
     }
 }
